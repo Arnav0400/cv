@@ -1,0 +1,51 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% Author:
+% Christophe Roger (Darwiin)
+% 
+% Modified by:
+% Sebastin Santy
+% This template has been downloaded from:
+% https://github.com/SebastinSanty/Just-Another-Research-CV
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage[en-US]{datetime2}
+
+\name{Arnav}{Chavan}
+\tagline{Senior Applied Scientist, Amazon Lab126 \enspace | \enspace Incoming Ph.D. Student, UC Berkeley}
+% \photo{2cm}{uwseal}
+\socialinfo{
+	\email{Email - arnavchavan04@gmail.com}
+    \website{https://sites.google.com/view/arnavchavan/}
+	\github{Arnav0400}
+	\scholar{https://scholar.google.com/citations?user=s4rghcgAAAAJ&hl=en}
+% 	\address{1023, Microsoft Research, \#9 VIGYAN, Lavelle Road, Bangalore, KA, India 560001}
+	\vspace{-3mm}
+
+}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+	\makecvheader
+    \DTMlangsetup{showdayofmonth=false}
+	\makecvfooter
+		{\textsc{\selectlanguage{english}\today}}
+		{\textsc{Arnav Chavan}}
+		{\thepage}
+    \input{sections/-1_overview}
+    \input{sections/0_education}
+    \input{sections/1_experiences}
+    \clearpage
+    \input{sections/2_publications}
+    % \input{sections/3_projects}
+    \input{sections/awards}
+    \input{sections/positions_of_responsibility}
+    % \input{sections/skills}
+    % \input{sections/miscellaneous}
+
+\end{document}
